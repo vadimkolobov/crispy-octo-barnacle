@@ -1,0 +1,14 @@
+        
+        let element = PointsRecognizer.findElement(
+            point,
+            in: state.collage
+        )
+        
+        var newState = state
+        newState.selectedElement = element
+        
+        return newState
+    }
+    
+    private func onLongTap(_ point: CGPoint,
+                           in state: AppState) -> AppState {
